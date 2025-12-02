@@ -77,7 +77,7 @@ public:
     }
     
     void deleteAtIndex(int index) {
-        if (index < 0 || index > size) return;
+        if (index < 0 || index >= size) return;
         if (index == 0){
             ListNode* temp = head;
             head = head->next;
